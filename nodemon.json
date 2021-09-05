@@ -1,0 +1,7 @@
+{
+  "watch": ["bin", "src"],
+  "ext": "ts",
+  "execMap": {
+    "ts": "node -r tsconfig-paths/register -r sucrase/register ./bin/server.ts"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ESNext"],
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@input/*": ["./input/*"],
+      "@output/*": ["./output/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@main/*": ["./src/main/*"],
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["src", "bin", "input", "output"],
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ]
+}

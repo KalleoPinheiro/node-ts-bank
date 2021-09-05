@@ -1,0 +1,48 @@
+{
+  "name": "zup-bank",
+  "version": "0.0.0",
+  "description": "zup api bank with typescript and best practices",
+  "main": "dist/server.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc -b",
+    "dev": "nodemon ./bin/server.ts",
+    "start": "node ./dist/bin/server.ts",
+    "prettier": "prettier --ignore-unknown --write src",
+    "lint": "eslint --fix --ext .js,.ts,.json .",
+    "test": "jest --passWithNoTests --no-cache --bail --maxWorkers=80%",
+    "test:watch": "npm test -- --watchAll",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --collectCoverage"
+  },
+  "author": "Kalléo Pinheiro <kalleopinheiro@hotmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "sucrase": "^3.20.1",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "uuid": "^8.3.2"
+  }
+}

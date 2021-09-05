@@ -1,0 +1,13 @@
+{
+  "operation": "TRANSFER",
+  "description": "Transferência realizada com sucesso!",
+  "clientDocument": "73fd434a-2f1c-4c5b-9127-383734a7594c",
+  "transfer": {
+    "transactionId": "2d60a4e3-4cd7-4971-94c8-f453a7f2f9f0",
+    "id": "73fd434a-2f1c-4c5b-9127-383734a7594c",
+    "amount": 100,
+    "transactionDate": "04/09/2021 20:33:10",
+    "payer": "1234567",
+    "receiver": "123456789"
+  }
+}
