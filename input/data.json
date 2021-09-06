@@ -1,25 +1,29 @@
 [
-  { "type": "CREATE_ACCOUNT", "document": "123456", "balance": 100 },
-  { "type": "CREATE_ACCOUNT", "document": "1234567", "balance": 100 },
-  { "type": "CREATE_ACCOUNT", "document": "12345678", "balance": 100 },
-  { "type": "CREATE_ACCOUNT", "document": "123456789", "balance": 100 },
-  { "type": "DEPOSIT", "document": "123456789", "amount": 100 },
+  { "type": "CREATE_ACCOUNT", "document": "123456789", "balance": 0 },
+  { "type": "CREATE_ACCOUNT", "document": "987654321", "balance": 0 },
+
+  { "type": "DEPOSIT", "document": "123456789", "amount": 1000 },
+  { "type": "DEPOSIT", "document": "987654321", "amount": 500 },
+
   { "type": "WITHDRAW", "document": "123456789", "amount": 200 },
-  { "type": "WITHDRAW", "document": "123456789", "amount": 1000 },
+  { "type": "WITHDRAW", "document": "987654321", "amount": 100 },
+
+  { "type": "WITHDRAW", "document": "9876543210", "amount": 100 },
+
   {
     "type": "TRANSFER",
     "transaction": {
       "id": "d7f283ef-3ee5-4a1a-b8d9-3a4d2f6af3b2",
-      "payer": "123456",
-      "receiver": "123456789",
-      "amount": 100
+      "payer": "123456789",
+      "receiver": "987654321",
+      "amount": 300
     }
   },
   {
     "type": "TRANSFER",
     "transaction": {
       "id": "73fd434a-2f1c-4c5b-9127-383734a7594c",
-      "payer": "1234567",
+      "payer": "987654321",
       "receiver": "123456789",
       "amount": 100
     }
@@ -28,9 +32,9 @@
     "type": "TRANSFER",
     "transaction": {
       "id": "168cf407-c50d-4e3b-8739-a1ae5da7cf4b",
-      "payer": "123456789",
-      "receiver": "12345678",
-      "amount": 200
+      "payer": "987654321",
+      "receiver": "123456789",
+      "amount": 2000
     }
   },
   {
@@ -38,11 +42,12 @@
     "transaction": {
       "id": "5076e311-45ba-402e-af36-32c13ef8d424",
       "payer": "123456789",
-      "receiver": "12345678",
-      "amount": 200
+      "receiver": "987654321",
+      "amount": 0
     }
   },
-  { "type": "EXTRACT", "document": "123456789" },
   { "type": "BALANCE", "document": "123456789" },
-  { "type": "BALANCE", "document": "1234567890" }
+  { "type": "BALANCE", "document": "987654321" },
+  { "type": "EXTRACT", "document": "123456789" },
+  { "type": "EXTRACT", "document": "987654321" }
 ]

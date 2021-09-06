@@ -1,0 +1,12 @@
+{
+  "operation": "TRANSFER",
+  "clientDocument": "d7f283ef-3ee5-4a1a-b8d9-3a4d2f6af3b2",
+  "data": {
+    "transactionId": "27de1811-5ca6-4902-abcc-9e5713d6ae98",
+    "id": "d7f283ef-3ee5-4a1a-b8d9-3a4d2f6af3b2",
+    "amount": 300,
+    "transactionDate": "06/09/2021 11:37:28",
+    "payer": "123456789",
+    "receiver": "987654321"
+  }
+}
