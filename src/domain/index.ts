@@ -5,6 +5,7 @@ export type {
   AccountType,
   ExtractTransactions,
   ExtractType,
+  PrintOperation,
 } from './transactions'
 export { OperationKind } from './operation-kind'
 

@@ -29,3 +29,9 @@ export interface ExtractType {
   document: string
   transactions: ExtractTransactions
 }
+
+export type PrintOperation = {
+  operation: string
+  clientDocument: string
+  data: unknown
+}

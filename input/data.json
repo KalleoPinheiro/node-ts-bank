@@ -4,11 +4,7 @@
   { "type": "CREATE_ACCOUNT", "document": "12345678", "balance": 100 },
   { "type": "CREATE_ACCOUNT", "document": "123456789", "balance": 100 },
   { "type": "DEPOSIT", "document": "123456789", "amount": 100 },
-  { "type": "DEPOSIT", "document": "123456789", "amount": 150 },
-  { "type": "DEPOSIT", "document": "1234567", "amount": 150 },
   { "type": "WITHDRAW", "document": "123456789", "amount": 200 },
-  { "type": "WITHDRAW", "document": "123456789", "amount": 10 },
-  { "type": "WITHDRAW", "document": "1234567", "amount": 50 },
   { "type": "WITHDRAW", "document": "123456789", "amount": 1000 },
   {
     "type": "TRANSFER",

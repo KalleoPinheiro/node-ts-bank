@@ -17,14 +17,10 @@
       "@domain/*": ["./src/domain/*"],
       "@main/*": ["./src/main/*"],
       "@services/*": ["./src/services/*"],
+      "@useCases/*": ["./src/useCases/*"],
       "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src", "bin", "input", "output"],
-  "exclude": [
-    "node_modules",
-    "coverage",
-    "src/**/*.spec.ts",
-    "src/**/*.test.ts"
-  ]
+  "exclude": ["node_modules", "coverage", "src/**/*.spec.ts", "src/**/*.test.ts"]
 }

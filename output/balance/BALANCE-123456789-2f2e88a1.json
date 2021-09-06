@@ -1,0 +1,11 @@
+{
+  "operation": "BALANCE",
+  "clientDocument": "123456789",
+  "data": [
+    {
+      "transactionId": "a6829173-710f-421b-9854-20d75aeb642d",
+      "amount": 140,
+      "transactionDate": "06/09/2021 11:23:24"
+    }
+  ]
+}

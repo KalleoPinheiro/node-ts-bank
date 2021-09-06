@@ -1,0 +1,11 @@
+{
+  "operation": "DEPOSIT",
+  "clientDocument": "1234567",
+  "data": [
+    {
+      "transactionId": "ae016145-4865-4a86-b896-422ca984967b",
+      "amount": 150,
+      "transactionDate": "06/09/2021 11:23:24"
+    }
+  ]
+}

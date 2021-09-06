@@ -23,6 +23,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": ["error", { "printWidth": 100, "arrowParens": "avoid" }]
+    "prettier/prettier": ["error", { "printWidth": 100, "arrowParens": "avoid" }],
+    "no-useless-constructor": "off"
   }
 }
