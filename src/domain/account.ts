@@ -1,5 +1,5 @@
 import { TransactionType } from '@domain/transactions'
-import { formatDate } from 'src/utils/format-date'
+import { formatDate } from '@utils/format-date'
 import { v4, v5 } from 'uuid'
 
 export class Account implements TransactionType {

@@ -6,14 +6,10 @@ import { unlink } from 'fs/promises'
 import { resolve } from 'path'
 
 export class Handler {
-  readonly #operations: Operation[]
+  private readonly operations: Operation[]
 
   constructor(data: Operation[]) {
-    this.#operations = data
-  }
-
-  get operations(): Operation[] {
-    return this.#operations
+    this.operations = data
   }
 
   async main(): Promise<void> {

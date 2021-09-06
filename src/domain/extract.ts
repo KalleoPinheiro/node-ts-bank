@@ -1,5 +1,5 @@
 import { ExtractTransactions, TransactionType } from '@domain/transactions'
-import { formatDate } from 'src/utils/format-date'
+import { formatDate } from '@utils/format-date'
 import { v4 } from 'uuid'
 
 export class Extract implements TransactionType {

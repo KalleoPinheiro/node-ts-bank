@@ -22,5 +22,5 @@
     }
   },
   "include": ["src", "bin", "input", "output"],
-  "exclude": ["node_modules", "coverage", "src/**/*.spec.ts", "src/**/*.test.ts"]
+  "exclude": ["node_modules", "coverage"]
 }

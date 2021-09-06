@@ -12,6 +12,8 @@ export default {
     '^@domain/(.*)': ['<rootDir>/src/domain/$1'],
     '^@main/(.*)': ['<rootDir>/src/main/$1'],
     '^@services/(.*)': ['<rootDir>/src/services/$1'],
+    '^@useCases/(.*)': ['<rootDir>/src/useCases/$1'],
+    '^@utils/(.*)': ['<rootDir>/src/utils/$1'],
   },
   preset: 'ts-jest',
   transform: {
@@ -21,6 +23,5 @@ export default {
   testEnvironment: 'node',
   coverageProvider: 'v8',
   coverageDirectory: 'coverage',
-  collectCoverageFrom: ['<rootDir>/src/**/*.(test|spec).ts'],
-  coverageReporters: ['text-summary', 'lcov'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!<rootDir>/src/domain/*.ts'],
 }
